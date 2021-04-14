@@ -176,6 +176,9 @@ clase Tarjeta implementa FormaDePago{
 
 ## Dudas
 
+- ¿Es realmente necesario hacer la clase abstracta Prenda?, entiendo que cada prenda puede tener su comportamiento, y para aprovechar el polimorfismo lo ideal es que cada prenda herede de la clase asbtracta Prenda (o quizá una interfaz si fuesen solo mensajes que deben entender todos). Ahora bien, dados los requerimientos, podría haber una clase `Prenda`, con un atributo `tipo` y el método `precio()` sin más y funcionaría correctamente.
+
+
 - Las clases que son una forma de pago, reciben en su método una lista de items, ya que lo necesita para poder saber el valor de cada prenda, si cambia la definicion de `Venta`, `FormaDePago` y sus clases que la implementa dejan de funcionar. ¿Esto tiene solucion o se convive con el problema?
 
 - Crear la clase `Venta`, `Ventas` e `Item` fueron necesarias para resolver el requerimiento de las ganancias de un dia. ¿Esto incluye implementar la lógica de agregar una nueva venta?, el hecho de que sean las ganancias de un DÍA, ¿Implica que tengo registradas ventas de otros días?
